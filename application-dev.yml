@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5455/ms-product-ecomerce-acme
-    username: alibou
-    password: alibou
+    username: cbgomes
+    password: cbgomes
   jpa:
     hibernate:
       ddl-auto: validate
