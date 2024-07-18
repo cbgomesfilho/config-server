@@ -1,3 +1,5 @@
+config:
+  cbgomes: test
 server:
   port: 8050
 spring:
