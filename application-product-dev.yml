@@ -7,7 +7,7 @@ spring:
     name: ms-product
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5456/ms-product-ecomerce-acme
+    url: jdbc:postgresql://localhost:5455/ms-product-ecomerce-acme
     username: cbgomes
     password: cbgomes
   jpa:
