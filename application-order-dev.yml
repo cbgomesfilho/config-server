@@ -1,9 +1,9 @@
-config:
-  cbgomes: test
 server:
   port: 8051
 spring:
   application:
+    config:
+      ms-customer: http://localhost:8090/api/v1/customers
     name: ms-order
   datasource:
     driver-class-name: org.postgresql.Driver
