@@ -3,7 +3,7 @@ server:
 spring:
   application:
     config:
-      ms-customer: http://localhost:8090/api/v1/customers
+      customer-url: http://localhost:8090/api/v1/customers
     name: ms-order
   datasource:
     driver-class-name: org.postgresql.Driver
