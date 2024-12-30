@@ -1,7 +1,7 @@
 config:
   cbgomes: test
 server:
-  port: 8050
+  port: 8051
 spring:
   application:
     name: ms-product
