@@ -5,7 +5,7 @@ spring:
     name: ms-order
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5533/ms_order
+    url: jdbc:postgresql://localhost:5533/ms-order
     username: postgres
     password: postgres
   jpa:
