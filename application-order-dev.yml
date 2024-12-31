@@ -1,8 +1,6 @@
 server:
   port: 8050
 spring:
-  profiles:
-    active: order-dev
   application:
     name: ms-order
   datasource:
