@@ -24,4 +24,5 @@ spring:
 ms:
   external:
     config:
-      customer-url: http://localhost:8090/api/v1/customers
+      customers-url: http://localhost:8090/api/v1/customers
+      products-url: http://localhost:8051/api/v1/products 
