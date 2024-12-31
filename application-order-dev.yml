@@ -25,4 +25,5 @@ ms:
   external:
     config:
       customers-url: http://localhost:8090/api/v1/customers
-      products-url: http://localhost:8051/api/v1/products 
+      products-url: http://localhost:8051/api/v1/products
+      payments-url: http://localhost:8052/api/v1/payments
