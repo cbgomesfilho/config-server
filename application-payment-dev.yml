@@ -1,1 +1,37 @@
 
+server:
+  port: 8052
+spring:
+  application:
+    name: ms-payment
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5535/ms-payment
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    baseline-description: "init"
+    baseline-version: 0
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+ms:
+  external:
+    config:
+      customers-url: http://localhost:8090/api/v1/customers
+      products-url: http://localhost:8051/api/v1/products
+      payments-url: http://localhost:8052/api/v1/payments
+kafka:
+  producer:
+    bootstrap-servers: localhost:9092
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    properties:
+      spring.json.type.mapping: orderConfirmation:br.com.ecommerce.service.producer.order.orderConfirmation
