@@ -9,3 +9,15 @@ spring:
       port: 27017
       database: notifications
       authentication-database: admin
+  mail:
+    smtp:
+      auth: true
+      startrls:
+        enable: true
+      host: mail.viaresults.com.br
+      port: 465
+    username: carlos@viaresults.com.br
+    password: Cax@016803
+  kafka:
+    consumer:
+      group-id: consumer-notifications
