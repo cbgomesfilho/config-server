@@ -1,8 +1,6 @@
 server:
   port: 8222
 spring:
-  main: 
-    web-application-type: reactive
   cloud:
     gateway:
       discovery:
